@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .contact-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            margin: 20px;
+        }
+        .contact-header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+        }
+        .contact-header h1 {
+            color: #2c3e50;
+            font-size: 24px;
+        }
+        .contact-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .contact-card h2 {
+            color: #34495e;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .contact-info p {
+            color: #7f8c8d;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .contact-info i {
+            color: #3498db;
+            min-width: 20px;
+            text-align: center;
+        }
+        .contact-actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .btn {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn-primary {
+            background-color: #3498db;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+        .btn-secondary {
+            background-color: #2ecc71;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>DDG Logistics Official Contact Information</h1>
+        </div>
+        
+        <div class="contact-card">
+            <h2>H.M.N Dinipriya Herath</h2>
+            <div class="contact-info">
+                <p><i>📍</i> Position: DDG Logistics</p>
+                <p><i>📱</i> Mobile: 0714471140</p>
+                <p><i>☎️</i> Land Line: 011 2692382</p>
+                <p><i>✉️</i> Email: ddglogistics@health.gov.lk</p>
+                <p><i>✉️</i> Email: dinipriya@gmail.com</p>
+                <p><i>📠</i> Fax: 011 2679864</p>
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <h2>H.M Anupama Madumali Bandara</h2>
+            <div class="contact-info">
+                <p><i>📍</i> Position: Director Building Administration</p>
+                <p><i>📱</i> Mobile: 0713484417</p>
+                <p><i>☎️</i> Land Line: 011 2681622</p>
+                <p><i>✉️</i> Email: anupamamadumali@gmail.com</p>
+                <p><i>📠</i> Fax: 011 2679864</p>
+            </div>
+        </div>
+
+        <div class="contact-actions">
+            <a href="mailto:ddglogistics@health.gov.lk" class="btn btn-primary">Send Email</a>
+            <a href="tel:0714471140" class="btn btn-secondary">Call Now</a>
+        </div>
+    </div>
+
+    <script>
+        // Optional: Add any interactive JavaScript here if needed
+        document.addEventListener('DOMContentLoaded', () => {
+            const contactCards = document.querySelectorAll('.contact-card');
+            
+            contactCards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
